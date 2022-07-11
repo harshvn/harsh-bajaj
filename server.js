@@ -59,6 +59,6 @@ app.post("/challenge", (req, res)=> {
 });
 
 
-app.listen(process.env.PORT || 3000,'localhost', function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("Server is Listening at Port 3000!");
 });
