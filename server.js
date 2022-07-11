@@ -12,6 +12,10 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.get("/", (req, res)=>{
+    res.send("Get Request");
+})
+
 app.post("/challenge", (req, res)=> {
     const is_success = true;
     const user_id = "harshvardhan_chandra_02062001";
